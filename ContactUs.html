@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ContactUs</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+     function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 5; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+
+
+</script>
+</head>
+
+<body onLoad="run_first()">
+	<div id="wrapper">
+	<header>
+    <img src="images/BeFunky Collage.jpg" alt="Logo">
+    	<h1>ContactUs</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+            	<li><a href="index.html" id ="0" onClick="nav_li_selected(0)">Home</a></li>
+				<li><a href="aboutus.html" id ="1" onClick="nav_li_selected(1)">About Us</a></li>
+                <li><a href="Costumes.html" id ="2" onClick="nav_li_selected(2)">Costumes</a></li>
+                <li><a href="Register.html" id ="3" onClick="nav_li_selected(3)">Register</a></li>
+                <li><a href="ContactUs.html" id ="4" onClick="nav_li_selected(4)">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 id="main_h1"></h1>
+    <section id="col1">
+    	<h2></h2>
+        <p>
+		<br>Contact<br/>
+			<br>Our Phone is 07 4771 1234<br/>
+		<br>Fax: 07-4771 1235<br/>
+	<br>Address: 4 Stanton Avenue, Hulkstwon<br/>
+	<br>Email Address-cossieplay@ gmail.com.<br/>
+       
+       <br>Useful Links<br/>
+       <br>Wikipedia Entry for Coseplay- <a href="https://en.wikipedia.org/wiki/Cosplay"></a><br/>
+       <br>World Largest Cosplay Community<a href="http://www.cosplay.com"></a><br/>
+       <br>Resource for Costumers<a href="cosplaytutorial.com/index.php"></a><br/>
+        </p>
+    </section>
+    
+    
+    <footer><h3>Design By Manpreet S Dhiman</h3></footer>
+    </div>
+</body>
+</html>

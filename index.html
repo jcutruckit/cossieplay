@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABC School</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+     function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 5; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+
+
+</script>
+</head>
+
+<body onLoad="run_first()">
+	<div id="wrapper">
+	<header>
+    <img src="images/BeFunky Collage.jpg" alt="Logo">
+    	<h1>Cossie Play</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+            	<li><a href="index.html" id ="0" onClick="nav_li_selected(0)">Home</a></li>
+               	<li><a href="about_us.html" id ="1" onClick="nav_li_selected(1)">About Us</a></li>
+                <li><a href="Costumes.html" id ="2" onClick="nav_li_selected(2)">Costumes</a></li>
+                <li><a href="Register.html" id ="3" onClick="nav_li_selected(3)">Register</a></li>
+                <li><a href="ContactUs.html" id ="4" onClick="nav_li_selected(4)">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 id="main_h1"></h1>
+    <section id="col1">
+    	<h2>What is CosPlay?</h2>
+        <p>
+        
+<br>Cosplay, a portmanteau of the words costume play, is a performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character. <br/>
+<br>Cosplayers often interact to create a subculture and a broader use of the term "cosplay" applies to any costumed role-playing in venues apart from the stage. <br/>
+<br>Any entity that lends itself to dramatic interpretation may be taken up as a subject and it is not unusual to see genders switched. <br/>
+<br>Favorite sources include manga and anime, comic books and cartoons, video games, and live-action films and television series.<br/>
+
+<br>The rapid growth in the number of people cosplaying as a hobby since 1990 has made the phenomenon a significant aspect of popular culture in Japan and some other parts of Asia and in the Western world.<br/> 
+<br>Cosplay events are common features of fan conventions and there are also dedicated conventions and local and international competitions, as well as social networks, websites and other forms of media centered on cosplay activities.<br/>
+ 
+        </p>
+    </section>
+    
+    <section id="col2">
+    	<h2>Announcements</h2>
+        <p>
+  <br>We have some cool things happening that we want people to know about: this month you can purchase 3 drinks for the price of 2 at the bar.<br/>
+<br>First-time party-goers get a 50% discount on entry.<br/>
+<br>If you get a costume custom made, your next party entry is free if you wear that costume.<br/>
+	<br>Wear your costume in to KFC on Stanton street and you can get a free drink with a 21-piece bucket.<br/> 
+<br>Tell them you’ve been to CossiePlay!<br/>
+
+        </p>
+    </section>
+    
+    <footer><h3>Design By Manpreet S Dhiman</h3></footer>
+    </div>
+</body>
+</html>

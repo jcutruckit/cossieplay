@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Costumes</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+     function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 5; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+
+
+</script>
+</head>
+
+<body onLoad="run_first()">
+	<div id="wrapper">
+	<header>
+    <img src="images/BeFunky Collage.jpg" alt="Logo">
+    	<h1>Costumes</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+            	<li><a href="index.html" id ="0" onClick="nav_li_selected(0)">Home</a></li>
+               	<li><a href="about_us.html" id ="1" onClick="nav_li_selected(1)">About Us</a></li>
+                <li><a href="Costumes.html" id ="2" onClick="nav_li_selected(2)">Costumes</a></li>
+                <li><a href="Register.html" id ="3" onClick="nav_li_selected(3)">Register</a></li>
+                <li><a href="ContactUs.html" id ="4" onClick="nav_li_selected(4)">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 id="main_h1"></h1>
+    <section id="col1">
+    	<h2>Prices List</h2>
+        <p>
+       <table width="500" border="3">
+  <tbody>
+    <tr>
+      <td><bold>Costume</bold></td>
+      
+      <td><bold>Size</bold></td>
+      <td><bold>Price</bold></td>
+    </tr>
+    <tr>
+      <td>Spiderman</td>
+      <td>12</td>
+      <td>$49</td>
+    </tr>
+    <tr>
+      <td>Elf</td>
+      <td>16</td>
+      <td>$35</td>
+    </tr>
+    <tr>
+      <td>Darth Vader</td>
+      <td>M</td>
+      <td>$149</td>
+    </tr>
+    <tr>
+      <td>Iron Man (with rocket boots)</td>
+      <td>M</td>
+      <td>$2,500</td>
+    </tr>
+    <tr>
+      <td>Bayonetta</td>
+      <td>8</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Diablo III – Demon Hunter</td>
+      <td>10</td>
+      <td>$250</td>
+    </tr>
+    <tr>
+      <td>Harley Quinn</td>
+      <td>18</td>
+      <td>$125</td>
+    </tr>
+    <tr>
+      <td>Metroid – Samus Aran</td>
+      <td>L</td>
+      <td>$850</td>
+    </tr>
+    <tr>
+      <td>Peter Pan</td>
+      <td>XS</td>
+      <td>$49</td>
+    </tr>
+    <tr>
+      <td>Princess Leia (White)</td>
+      <td>10</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Spock (Star Trek)</td>
+      <td>S</td>
+      <td>$1,235</td>
+    </tr>
+  </tbody>
+</table>
+ 
+        </p>
+    </section>
+ 
+    <footer><h3>Design By Manpreet S Dhiman</h3></footer>
+    </div>
+</body>
+</html>
