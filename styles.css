@@ -1,11 +1,11 @@
 @charset "utf-8";
 #wrapper {
-	width: 92%;
+	width: 95.5%;
 	margin: 0 auto;
 	background-color:darkkhaki;
 }
 header {
-	height:50px;
+	height:100px;
 }
 header h1 {
 	font-size:300%;
@@ -46,7 +46,7 @@ header nav ul li a:hover {
 #col1 {
 	width: 95%;
 	float: left;
-	height: 360px;
+	height: 320px;
 	margin: 5px 15px 5px 10px;
 	padding: 5px;
 	font-size: 100%;
@@ -56,6 +56,73 @@ header nav ul li a:hover {
 	float: left;
 	height: 250px;
 	margin: 5px 15px 5px 10px;
+	padding: 5px;
+	font-size: 100%;
+}
+#col3 {
+	width: 45%;
+	float: left;
+	height: 200px;
+	border: solid;
+	margin: 5px 20px  5px 40px;
+	padding: 5px;
+	font-size: 100%;
+}
+#col4 {
+	width: 45%;
+	float: left;
+	height: 200px;
+	border: solid;
+	margin: 5px 20px  5px 40px;
+	padding: 5px;
+	font-size: 100%;
+}
+#col5 {
+	width: 45%;
+	float: left;
+	height: 320px;
+	margin: 5px 20px  5px 50px;
+	padding: 5px;
+	font-size: 100%;
+}
+#col6 {
+	width: 45%;
+	float: left;
+	height: 320px;
+	margin: 5px 20px  5px 40px;
+	padding: 5px;
+	font-size: 100%;
+}
+#col7 {
+	width: 90%;
+	float: left;
+	height: 400px;
+	margin: 5px 20px  5px 45px;
+	padding: 5px;
+	font-size: 100%;
+}
+#col8 {
+	width: 75%;
+	float: left;
+	height: 480px;
+	margin: 5px 20px  5px 15px;
+	padding: 5px;
+	font-size: 110%;
+}
+#col9 {
+	width: 75%;
+	float: left;
+	height: 450px;
+	margin: 5px 20px  5px 15px;
+	padding: 5px;
+	font-size: 120%;
+}
+#col10 {
+	width: 45%;
+	float: left;
+	height: 230px;
+
+	margin: 5px 20px  5px 25px;
 	padding: 5px;
 	font-size: 100%;
 }
